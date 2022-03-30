@@ -4,6 +4,7 @@
 
 html {
   background: #f6f9fe;
+  font-size: 62.5%;
 }
 
 body {
@@ -20,11 +21,11 @@ body {
 }
 
 .logo {
-  margin: 20px 20px;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
   /* test */
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 
 .logo img:nth-of-type(1) {
@@ -37,21 +38,28 @@ nav {
   display: none;
 }
 
+li:nth-of-type(5) {
+  cursor: pointer;
+}
+
 .center {
   /* margin: 0 auto; */
   text-align: center;
 }
 
-.first {
+.tag {
   background: #302559;
   color: #ccc1e6;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 3rem;
+  /* margin-left: 6rem; */
+  margin-bottom: 2rem;
+  width: 60%;
 }
 
-.first a {
+.tag a {
   color: #ccc1e6;
   font-weight: 600;
 }
@@ -61,13 +69,25 @@ h1 {
   text-align: center;
 }
 
+.mobile {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+  font-size: 2.4rem;
+}
+
 .tablet {
   display: none;
 }
 
 .main {
-  color: #595959;
-  line-height: 1.5rem;
+      color: #595959;
+    line-height: 1.5;
+    width: 76%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
 }
 
 .main-tablet {
@@ -79,11 +99,17 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
-  /* experimental */
+  /* test */
   width: 90%;
 }
 
+input::placeholder{
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
 button {
+  font-size: 1.4rem;
   background: #302559;
   color: white;
   padding: 20px 60px;
@@ -101,19 +127,22 @@ button {
 span {
   color: #545454;
   font-weight: 700;
-  margin-left: 40px;
-  /* test */
+  margin-left: 2.2rem;
+  font-size: 1.3rem;
 }
 
 .companies-container {
-  margin-left: 40px;
-  padding-bottom: 30px;
-  margin-top: 5px;
+      margin-left: 1.8rem;
+    margin-top: 5px;
+    width: 27rem;
+    height: 11.7rem;
 }
 
 .companies-container img {
-  margin-right: 0.5rem;
-  margin-top: 0.9rem;
+    margin-right: 1rem;
+    margin-top: 0.9rem;
+    width: 3.8rem;
+    height: 3.8rem;
 }
 
 .companies-container__tablet {
@@ -138,10 +167,6 @@ span {
     margin-right: 50px;
   }
 
-  .first br {
-    display: none;
-  }
-
   h1 {
     font-size: 3rem;
   }
@@ -155,10 +180,6 @@ span {
     margin-top: 10px;
     /* test */
     margin-bottom: 0px;
-  }
-
-  .main br {
-    /* display: none; */
   }
 
   .main {
@@ -261,10 +282,8 @@ span {
   }
   li {
     list-style: none;
-    /* test */
-    margin-left: 15px;
-    /* position: relative;
-    bottom: 30px; */
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   li:last-child {
@@ -301,12 +320,6 @@ span {
     margin-top: 30px;
   }
 
-  /* .first {
-    position: relative;
-    right: 285px;
-    display: inline-block;
-  } */
-
   .tablet {
     display: none;
   }
@@ -336,12 +349,11 @@ span {
     /* margin-bottom: 25px; */
   }
 
-  .first {
+  /* .tag {
     position: relative;
     right: 367px;
     top: 20px;
-    display: inline-block;
-  }
+    display: inline-block; */
 
   .form {
     position: relative;
